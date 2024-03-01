@@ -35,25 +35,11 @@ app.listen(port, () => {
   console.log(`🔗 Powered By RTX`);
 });
 
-
-console.log('\x1b[32m%s\x1b[0m', `|    🌼 Logged in as ${client.user.username}`);
-
 setInterval(() => client.user.setActivity({ 
   name: `Noblefu Media Team🚨`, 
   type: ActivityType.PLAYINGA }), 10000);
 client.errorLog = config.errorLog
 } else {
-console.log('\x1b[36m%s\x1b[0m', `|    🍔 Error MongoDB!`)
-}
-console.log('\x1b[36m%s\x1b[0m', `|    🎯 Activity sucessfully set!`);
-
-
-if(client.config.voteManager.status === true && client.config.voteManager.api_key){
-const { AutoPoster } = require('topgg-autoposter')
-const ap = AutoPoster(client.config.voteManager.api_key, client)
-ap.on('posted', () => {
-})
-}
 
 }
 
