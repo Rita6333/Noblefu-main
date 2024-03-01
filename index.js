@@ -36,8 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["Rita"];
-  name: `Noblefu Media Team🚨`, 
+const statusMessages = [""];
 
 
 let currentIndex = 0;
