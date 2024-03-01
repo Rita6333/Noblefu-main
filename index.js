@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-setInterval(() => client.user.setActivity({ 
+const statusMessages = ["Rita"];
   name: `Noblefu Media Team🚨`, 
 
 
