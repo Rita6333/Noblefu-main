@@ -36,7 +36,11 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["Rita"];
+setInterval(() => client.user.setActivity({ 
+  name: `Noblefu Media Team🚨`, 
+  type: ActivityType.PLAYINGA }), 10000);
+client.errorLog = config.errorLog
+} else 
 
 
 let currentIndex = 0;
