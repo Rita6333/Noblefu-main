@@ -35,15 +35,10 @@ app.listen(port, () => {
   console.log(`🔗 Powered By RTX`);
 });
 
-setInterval(() => client.user.setActivity({ 
-  name: `Noblefu Media Team🚨`, 
-  type: ActivityType.PLAYINGA }), 10000);
-client.errorLog = config.errorLog
-} else {
 
-}
+const statusMessages = ["Rita"];
 
- 
+
 let currentIndex = 0;
 const channelId = '';
 
